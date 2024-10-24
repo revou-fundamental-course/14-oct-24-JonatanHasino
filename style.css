@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #004d99;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo img {
+    width: 70px;
+    height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #003366;
+}
+
+/* Home Welcome Section */
+.welcome {
+    background: linear-gradient(rgba(0, 77, 153, 0.7), rgba(0, 77, 153, 0.7)), url('welcome-background.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bold;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: bold;
+}
+
+/* Facilitation Section */
+.facilitation {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.facilitation h2 {
+    font-size: 2.5em;
+    color: #004d99;
+    margin-bottom: 30px;
+}
+
+.facilities {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.facility {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.facility img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 5px solid #004d99;
+}
+
+.facility p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Message Us Section */
+
+
+#message-us {
+    
+    background-color: #ffffff; 
+    border: 1px solid #007bff; 
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+h2 {
+    color: #007bff; 
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333; 
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007bff; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #0056b3; 
+    outline: none; 
+}
+
+button {
+    background-color: #007bff; 
+    color: #ffffff; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+
+
+/* Form Output */
+#formOutput {
+    background-color: #fff;
+    color: #333;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Profile Page Sections */
+.photo-banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.about-company, .vision-mission {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-company h2, .vision-mission h2 {
+    color: #004d99;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-company p, .vision-mission p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facilities {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facility {
+        margin-bottom: 20px;
+    }
+    .facility img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    input, textarea, select {
+        border: 1px solid #ccc;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+}
